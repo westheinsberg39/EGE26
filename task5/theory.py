@@ -44,6 +44,32 @@ num_bin ='101'
 num_tri = '121'
 num_hex= 'fa8'
 
-print(int(num_bin), 2)) #изначально из 10 в 10, => указ. сист. счисл.
-print(int(num_bin), 3))
-print(int(num_bin), 16))
+#print(int(num_bin), 2))= #изначально из 10 в 10, => указ. сист. счисл.
+#print(int(num_bin), 3))
+#print(int(num_bin), 16))
+
+# Срезы
+data = '123456789'
+# Извлечение первых двух символов
+print(data[:2])
+# Извлечение без первых двух символов
+print(data[2:])
+# Извлечение последних двух символов
+print(data[-2:])
+# Извлечение без последних двух символов
+print(data[:-2])
+
+# Сумма цифр числа
+# Двоичная система
+num_1 = '1010'
+sum_1 = num_1.count('1')
+
+# Любая система (до 10 вкл.)
+num_2 = '122'
+sum_2 = sum(map(int,num_2))
+# print(sum_2)
+
+# Любая система (до 36 вкл.)
+num_3 = 'A'
+# print(int(num3,36))
+sum_3 = sum(map(lambda x: int(x,36), num_3))
